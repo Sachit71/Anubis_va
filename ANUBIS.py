@@ -24,7 +24,7 @@ def balls():
                           "Enter 'download on youtube' to access YouTube.")
     Dec1=str(Dec1)
 
-    if Dec1=="Ask question":#Opens wolfram
+    if Dec1=="ask question":#Opens wolfram
         spam=pyautogui.prompt("Write your question here:")
         app_id="VH4PQ6-U2KA6H32J8"
         client =wolframalpha.Client(app_id)
@@ -32,25 +32,25 @@ def balls():
         answer = next(res.results).text
         pyautogui.alert(answer)
 
-    elif Dec1=="Open wikipedia":#Opens wikipedia
+    elif Dec1=="open wikipedia":#Opens wikipedia
         Wikipedia_info=pyautogui.prompt("Enter topic to be serached here on WIKIPEDIA:")
         pyautogui.alert(wikipedia.summary(Wikipedia_info,sentences=500))
 
-    elif Dec1=="Open URL:":#Opens URL
+    elif Dec1=="open URL:":#Opens URL
         website_open=pyautogui.prompt("Enter website URL")
         webbrowser.open(website_open)
-    elif Dec1=="Track number":
+    elif Dec1=="track number":
         X=pyautogui.prompt("Enter number here")
         phone_number1=phonenumbers.parse(X)
         pyautogui.alert(geocoder.description_for_number(phone_number1,"en"))
 
-    elif Dec1=="Get geeky jokes":
+    elif Dec1=="get geeky jokes":
         pyautogui.alert(pyjokes.get_joke())
     elif Dec1=="Dev info":
         pyautogui.alert("ANUBIS was made by Sachit Ramesh, a 16 year old tech enthusiast. The code is free and Open Source so feel to contribute on GitHub")
     elif Dec1=="EASTER EGG!!!":
         pyautogui.alert("¯\_(ツ)_/¯  NOTHING HERE HUMAN!")
-    elif Dec1=="Set reminder":
+    elif Dec1=="set reminder":
         Reminder=pyautogui.prompt("What should I remind you about?")
         Time1=pyautogui.prompt("In how many minutes?")
         Time1=float(Time1)
@@ -58,7 +58,7 @@ def balls():
         time.sleep(Time1)
         pyautogui.alert("REMINDER!!!")
         pyautogui.alert(Reminder)
-    elif Dec1=="Download from Youtube":
+    elif Dec1=="download from Youtube":
         url=pyautogui.prompt("Enter video URL to watch without ads and in best quality.")
         video=pafy.new(url)
         best =video.getbest()

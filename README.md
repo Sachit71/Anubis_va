@@ -11,5 +11,5 @@ After that is done type this ```cd Anubis_va```
 This should lead you to another Directory named 'Anubis_va'
 There type, ```python ANUBIS.py```
 And you are good to go!
-After you are done playing, Enter```No``` IN THE dO YOU WANT TO CONTINUE? pROMPT BOX.
+After you are done playing, Enter```No``` IN THE DO YOU WANT TO CONTINUE? PROMPT BOX.
 Cheers!

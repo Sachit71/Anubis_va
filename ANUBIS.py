@@ -21,7 +21,7 @@ def balls():
                           "Enter 'track number' to find the phone number's location.\n"
                           "Enter 'get geeky jokes' for a nerdy joke.\n"
                           "Enter 'set reminder' to set reminder.\n"
-                          "Enter 'download on youtube' to access YouTube.")
+                          "Enter 'download from youtube' to access YouTube.")
     Dec1=str(Dec1)
 
     if Dec1=="ask question":#Opens wolfram

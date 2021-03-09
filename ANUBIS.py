@@ -15,7 +15,13 @@ import vlc
 import pafy
 pyautogui.alert("Hello I'm ANUBIS,powered by WOLFRAM|ALPHA")
 def balls():
-    Dec1=pyautogui.prompt("How may I help you? Enter 'Ask question' to access WOLFRAM. Enter 'Open wikipedia' to access wikipedia. Enter 'Enter website URL' to open URL. Enter 'Track number' to find the phone number's location. Enter 'Get geeky jokes' for a nerdy joke. Enter 'Set reminder' to set reminder. Enter 'Download on Youtube' to access YouTube.")#Enter input for application to open
+    Dec1=pyautogui.prompt("How may I help you? Enter 'Ask question' to access WOLFRAM.\n"
+                          "Enter 'open wikipedia' to access wikipedia.\n"
+                          "Enter 'enter website url' to open URL.\n"
+                          "Enter 'track number' to find the phone number's location.\n"
+                          "Enter 'get geeky jokes' for a nerdy joke.\n"
+                          "Enter 'set reminder' to set reminder.\n"
+                          "Enter 'download on youtube' to access YouTube.")
     Dec1=str(Dec1)
 
     if Dec1=="Ask question":#Opens wolfram
@@ -65,12 +71,13 @@ balls()
 def lol():
     pyautogui.alert("Hold on a sec....")
 lol()   
-######################################################################################################################################
+
 def lmao():
-    Dec3=pyautogui.prompt("Want to continue?")
+    Dec3=pyautogui.prompt("Want to continue?Type 'Yes' or 'No'")
     if Dec3=="Yes":
         balls()
     elif Dec3=="No":
+        pyautogui.alert("Thank you for downloading ANUBIS, as we are a growing Non-profit free software please do consider donating to ANUBIS,for more info write to us @quantechlxxi.corp@gmail.com -ANUBIS developer")
         exit()
     else:
         pyautogui.alert("Thank you for downloading ANUBIS, as we are a growing Non-profit free software please do consider donating to ANUBIS,for more info write to us @quantechlxxi.corp@gmail.com -ANUBIS developer")

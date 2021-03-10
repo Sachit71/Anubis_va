@@ -26,7 +26,7 @@ def balls():
 
     if Dec1=="ask question":#Opens wolfram
         spam=pyautogui.prompt("Write your question here:")
-        app_id="VH4PQ6-U2KA6H32J8"
+        app_id=""#get your own ID
         client =wolframalpha.Client(app_id)
         res=client.query(spam)
         answer = next(res.results).text
